@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante Sushi Delícia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6347;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #ff6347;
+            border-bottom: 2px solid #ff6347;
+            padding-bottom: 10px;
+        }
+
+        .history, .menu {
+            margin-top: 30px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1 1 calc(33% - 40px);
+            min-width: 200px;
+        }
+
+        .item h3 {
+            margin-top: 0;
+            color: #ff6347;
+        }
+
+        footer {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px) {
+            .menu-items {
+                flex-direction: column;
+            }
+            .item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sushi Delícia</h1>
+        <nav>
+            <a href="#historia">História</a>
+            <a href="#cardapio">Cardápio</a>
+        </nav>
+    </header>
+
+    <section id="historia" class="history">
+        <h2>Nossa História</h2>
+        <p>O Sushi Delícia nasceu do amor pela culinária japonesa e do desejo de oferecer uma experiência autêntica e saborosa aos nossos clientes. Com ingredientes frescos e uma equipe dedicada, buscamos sempre surpreender com sabores únicos e um ambiente acolhedor.</p>
+    </section>
+
+    <section id="cardapio" class="menu">
+        <h2>Cardápio</h2>
+        <div class="menu-items">
+            <div class="item">
+                <h3>California Roll</h3>
+                <p>Arroz, alga, kani, pepino e abacate.</p>
+                <p><strong>Preço:</strong> R$ 25,00</p>
+            </div>
+            <div class="item">
+                <h3>Sashimi de Salmão</h3>
+               
